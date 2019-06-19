@@ -6,11 +6,17 @@ https://www-us.apache.org/dist/kafka/2.2.0/kafka_2.12-2.2.0.tgz (Download)
 Extract downloaded zipped folder 
 Go to extracted folder
 
+Note: before start kafka, do not forget to add listeners(see below) into server.properties in config folder.
+  listeners=PLAINTEXT://localhost:9092
+  
+
 Type: $ bin/zookeeper-server-start.sh config/zookeeper.properties 
 To start zookeeper server
 
 Open new terminal tab and type: $ bin/kafka-server-start.sh config/server.properties 
 To start actual Kafka server
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 
